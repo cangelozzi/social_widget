@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Social Widget</title>
+  <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <section class="social">
+
+      <!-- Twitter  -->
+      <img @click="twitterOnOff" src="images/twitter_logo.png" alt="Twitter" width="100px" height="100px">
+
+      <!-- soundcloud -->
+      <img @click="soundcloudOnOff" src="images/soundcloud_logo.png" alt="SoundCloud" width="100px" height="100px">
+
+      <!-- codepen -->
+      <img @click="codepenOnOff" src="images/codepen.png" alt="Pinterest" width="100px" height="100px">
+
+    </section>
+
+
+    <!-- Twitter embeding -->
+    <div id="twitter" v-show='twitterShow'>
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/webdesign" data-widget-id="939945507429814272">#webdesign</a>
+    </div>
+
+    <!-- soundcloud embeding -->
+    <div id="soundcloud" v-show='souncloudShow'>
+      <iframe width="600px" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/47912543&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+    </div>
+
+    <!-- codepen embeding -->
+    <div class="codepen" v-show="codepenShow">
+      <p data-height="600" data-theme-id="dark" data-slug-hash="gWWQgb" data-default-tab="js,result" data-user="sdras" data-embed-version="2"
+        data-pen-title="React Animated Page Transitions" class="codepen">
+        <a href="https://codepen.io/sdras/pen/gWWQgb/"></a>
+        <a href="https://codepen.io/sdras"></a>
+        <a href="https://codepen.io">CodePen</a>
+      </p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

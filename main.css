@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: rgb(249, 247, 209);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  padding: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.social {
+  padding: 20px;
+  display: inline-block;
+  margin-left: 190px;
+}
+
+img {
+  margin-right: 40px;
+}
